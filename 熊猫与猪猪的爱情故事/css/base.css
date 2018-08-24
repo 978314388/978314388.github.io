@@ -1,0 +1,151 @@
+/*头部区域*/
+	body{
+		background:linear-gradient(white,black);
+	}
+	.title{
+		width:100%;
+		height:37px;
+		text-align:center;
+		line-height:37px;
+		padding-top:35px;
+		margin-bottom:30px;
+	}
+	.title>span>a{
+		display:inline-block;
+		font-size:32px;
+		font-family:"微软雅黑";
+		color:rgb(128,128,128);
+		animation: yu 3s ease 0s both;
+	}
+	@-webkit-keyframes yu{
+		0%{
+			transform:rotate(0deg) scale(1);
+			color:rgb(128,128,128);
+		}20%{
+			transform:rotate(90deg) scale(.6);
+			color:rgb(128,128,128);
+		}40%{
+			transform:rotate(-90deg) scale(1.6);
+			color:rgb(128,128,128);
+		}60%{
+			transform:rotate(45deg) scale(0.8);
+			color:rgb(128,128,128);
+		}80%{
+			transform:rotate(-45deg) scale(1.4);
+			color:rgb(128,128,128);
+		}100%{
+			transform:rotate(0deg) scale(1);
+			color:deeppink;
+		}
+	}
+	.title span{
+		font-size:27px;
+		font-family:"微软雅黑";
+		color:rgb(128,128,128);
+	}
+	.top_nav{
+		width:100%;
+		height:39px;
+		border-top:1px solid #b9b9b9;
+		border-bottom:1px solid #b9b9b9;
+	}
+	.top_nav>div{
+		display:none;
+	}
+	.top_nav>span{
+		display:none;
+	}
+	.top_nav ul{
+		width:55%;
+		height:39px;
+		margin:0 auto;
+	}
+	.top_nav ul li{
+		float:left;
+		line-height:39px;
+		margin-left:12.3%;
+		text-align:center;
+	}
+	.top_nav ul li a{
+		font-family:"幼圆";
+	}
+	.top_nav ul li.active a{
+		color:deeppink;
+	}
+/*轮播图区域*/
+	.slide{
+		margin-top:50px;
+		width:100%;
+	}
+	.sub{
+		width:100%;
+		height:441px;
+		margin:0 auto;
+		position:relative;
+	}
+	.sub ul{
+		width:300%;
+		position:absolute;
+	}
+	.sub ul li{
+		width:33.2%;
+		float:left;
+		text-align:center;
+	}
+	.sub ul li img{
+		width:60%;
+		height:auto;
+	}
+	.sub>span#prev,.sub>span#next{
+		display:block;
+		font-size:21px;
+		color:black;
+		font-family:"华文行楷";
+		text-align:center;
+		width:10%;
+		height:6%;
+		border:1px solid gray;
+		cursor:pointer;
+		transition:all .5s ease 0s;
+		position:absolute;
+	}
+	.sub>span#prev{
+		top:10%;
+		left:5%;
+	}
+	.sub>span#next{
+		top:90%;
+		right:5%;
+	}
+	.w{
+		overflow:hidden;
+	}
+/*内容区域*/
+	.big_content{
+		width:100%;
+	}
+	.content,.content_img{
+		width:100%;
+		margin:0 auto;
+	}
+	.video{
+		width:980px;
+		height:540px;
+		margin-top:30px;
+		margin-bottom:30px;
+	}
+	.video video{
+		width:100%;
+		border-radius:20px;
+	}
+	.content>.content_img>div{
+		width:100%;
+		margin:0 auto;
+		text-align:center;
+	}
+	.content>.content_img>div>img{
+		width:80%;
+		margin:0 auto;
+		text-align:center;
+		margin-top:-5px;
+	}
