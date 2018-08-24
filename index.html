@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#box{
+			list-style: none;
+		}
+		#box li{
+			width: 100px;
+			height: 350px;
+			border:1px solid black;
+			display: inline-block;
+			float:left;
+			transition:all 1s ease 0s;
+		}
+		#box .mmp{
+			width: 300px;
+			height: 350px;
+		}
+		#bbox {
+			width: 9999px;
+			height: 100%;
+		}
+		h1{
+			text-align:center;
+			font-family:"华文行楷";
+			color:red;
+		}
+	</style>
+</head>
+<body>
+	<h1>韩颢璇</h1>
+	<div id="bbox">
+		<ul id="box">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li class="mmp">6</li>
+		</ul>
+	</div>
+</body>
+</html>
+<script>
+	var box = document.getElementById('box');
+	var lis = box.getElementsByTagName('li');
+	var colorArry = ['pink','red','skyblue','lime','blue','yellow'];
+	for (var i = 0; i < lis.length; i++) {
+		lis[i].style.backgroundColor = colorArry[i];
+		lis[i].onmouseover = function() {
+			lis[0].style.width = "100px";
+			lis[1].style.width = "100px";
+			lis[2].style.width = "100px";
+			lis[3].style.width = "100px";
+			lis[4].style.width = "100px";
+			lis[5].style.width = "100px";
+			this.style.width = "300px";
+		}
+	}
+</script>
